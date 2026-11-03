@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Wangchen Norbu | Portfolio</title>
+  <meta name="description" content="Portfolio of Wangchen Norbu, a final-year Computer System and Network diploma student at Jigme Namgyel Engineering College, Bhutan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="grid-bg"></div>
+  <div class="splash" id="splash">
+    <div class="splash-in">
+      <svg class="bot-mini" viewBox="0 0 400 440" aria-hidden="true"><use href="#botG"/></svg>
+      <p class="sp-name grad">Wangchen Norbu</p>
+      <p class="sp-sub">Booting portfolio...</p><div class="boot"><i></i></div>
+      <div class="cta">
+        <button class="btn primary" id="enterMusic">Enter with music</button>
+        <button class="btn ghost" id="enterSilent">Enter silent</button>
+      </div>
+    </div>
+  </div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="bot-bg" aria-hidden="true"><svg id="botMain" viewBox="0 0 400 440"><g id="botG">
+      <line class="rb" x1="200" y1="22" x2="200" y2="70"/><circle class="lamp" cx="200" cy="16" r="9"/>
+      <rect class="rb" x="60" y="70" width="280" height="240" rx="26"/>
+      <rect class="rb" x="30" y="150" width="30" height="80" rx="8"/><rect class="rb" x="340" y="150" width="30" height="80" rx="8"/>
+      <line class="rb" x1="120" y1="100" x2="280" y2="100"/>
+      <circle class="rb" cx="140" cy="170" r="44"/><circle class="rb" cx="260" cy="170" r="44"/>
+      <g class="blink"><circle class="pupil" cx="140" cy="170" r="17"/><circle class="pupil" cx="260" cy="170" r="17"/></g>
+      <rect class="rb" x="120" y="250" width="160" height="36" rx="6"/>
+      <path class="rb" d="M148 250v36M174 250v36M200 250v36M226 250v36M252 250v36"/>
+      <circle class="rb" cx="82" cy="92" r="5"/><circle class="rb" cx="318" cy="92" r="5"/><circle class="rb" cx="82" cy="288" r="5"/><circle class="rb" cx="318" cy="288" r="5"/>
+      <rect class="rb" x="165" y="310" width="70" height="28"/>
+      <path class="rb" d="M60 440Q60 352 150 340H250Q340 352 340 440"/>
+    </g></svg></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <button class="music-btn" id="musicBtn" aria-label="Turn music on" aria-pressed="false">
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="musicTxt">Music off</span>
+  </button>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">&lt;WN/&gt;</a>
+    <nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch colour theme">&#9728;</button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="status"><i></i> Final year, JNEC</p>
+        <h1><span id="greet">Kuzuzangpo la</span>, I am<br><span class="grad">Wangchen Norbu</span></h1>
+        <p class="headline">Computer systems and networks student learning to build <span id="typed" class="typed"></span></p>
+        <p class="intro">I am a final-year diploma student at Jigme Namgyel Engineering College in Bhutan. I am learning web development, APIs and Linux, and my goal is to start my own business.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View my projects</a>
+          <a href="#contact" class="btn ghost">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar" aria-label="Profile picture">
+          <img src="profile.jpg" alt="Wangchen Norbu in a traditional Bhutanese gho">
+        </div>
+        <div class="terminal glass" aria-hidden="true">
+          <div class="dots"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> developer = {
+  name: <span class="s">"Wangchen"</span>,
+  from: <span class="s">"Bhutan"</span>,
+  learning: [<span class="s">"Web"</span>, <span class="s">"API"</span>],
+  goal: <span class="s">"own business"</span>
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div id="mq"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>PHP and Laravel</span><span>Linux</span><span>Git and GitHub</span><span>APIs</span><span>Networking</span></div></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div class="glass pad">
+          <p>I am Wangchen Norbu, a final-year student of the Diploma in Computer System and Network at Jigme Namgyel Engineering College, Royal University of Bhutan. I live and study in Samdrup Jongkhar.</p>
+          <p>I like editing, reading and working out. Editing teaches me to care about details, reading keeps me learning, and working out builds the discipline I bring to my studies. I am adaptable and I work comfortably in English, Dzongkha and Hindi.</p>
+          <p><strong>Career goal:</strong> to start my own business. I am building my technical skills now so that I can create and run digital services myself.</p>
+        </div>
+        <ul class="facts">
+          <li class="glass"><b>3</b> projects on GitHub</li>
+          <li class="glass"><b>3</b> Coursera certificates</li>
+          <li class="glass"><b>3</b> languages spoken</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="glass pad">
+          <h3>Technical (beginner level)</h3>
+          <div class="skill" data-level="45"><span>HTML and CSS</span><em>Beginner</em><div class="bar"><div></div></div></div>
+          <div class="skill" data-level="35"><span>JavaScript</span><em>Beginner</em><div class="bar"><div></div></div></div>
+          <div class="skill" data-level="40"><span>Python (Tkinter)</span><em>Beginner</em><div class="bar"><div></div></div></div>
+          <div class="skill" data-level="30"><span>PHP and Laravel</span><em>Beginner</em><div class="bar"><div></div></div></div>
+          <div class="skill" data-level="35"><span>Linux server administration</span><em>Beginner</em><div class="bar"><div></div></div></div>
+          <div class="skill" data-level="40"><span>Git and GitHub</span><em>Beginner</em><div class="bar"><div></div></div></div>
+        </div>
+        <div class="glass pad">
+          <h3>Other</h3>
+          <div class="chips">
+            <span>Adaptable</span><span>Video editing</span><span>Reading</span><span>Discipline</span>
+            <span>English</span><span>Dzongkha</span><span>Hindi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="js">JavaScript</button>
+        <button class="filter" data-filter="api">API</button>
+      </div>
+      <div class="project-grid">
+        <article class="card glass" data-cat="web">
+          <div class="thumb t1">&#9733;</div>
+          <h3>Events Hub</h3>
+          <p>A practical project for listing and managing events, built step by step in class. Each practical was submitted as a GitHub pull request.</p>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>Pull requests</span></div>
+          <div class="links"><a href="https://github.com/05240163jnec-pixel/events_hub" target="_blank" rel="noopener">View code</a></div>
+        </article>
+        <article class="card glass" data-cat="api">
+          <div class="thumb t2">{ }</div>
+          <h3>API Project</h3>
+          <p>A practice project where I learned how applications request and send data through an API.</p>
+          <div class="tags"><span>API</span><span>Git</span><span>GitHub</span></div>
+          <div class="links"><a href="https://github.com/05240163jnec-pixel/API" target="_blank" rel="noopener">View code</a></div>
+        </article>
+        <article class="card glass" data-cat="web js">
+          <div class="thumb t3">&lt;/&gt;</div>
+          <h3>Student Portfolio</h3>
+          <p>This responsive portfolio website with a theme toggle, project filter, animated skill bars and a contact form.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="links"><a href="https://github.com/05240163jnec-pixel/student_portfolio" target="_blank" rel="noopener">View code</a><a href="https://05240163jnec-pixel.github.io/student_portfolio/" target="_blank" rel="noopener">Live site</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="glass"><time>2024 to 2026 (final year)</time><h3>Diploma in Computer System and Network</h3><p>Jigme Namgyel Engineering College, Royal University of Bhutan.</p></li>
+        <li class="glass"><time>2023</time><h3>Higher Secondary Education (Commerce)</h3><p>Desi High School, Bhutan.</p></li>
+      </ol>
+      <h3 class="sub">Certifications</h3>
+      <div class="cert-grid">
+        <a class="glass cert" href="https://coursera.org/verify/NYTKWWE64FPJ" target="_blank" rel="noopener"><time>Sep 8, 2026</time><h4>Master Full-Stack Web Development with Laravel and PHP</h4><p>Board Infinity, on Coursera. Verify certificate</p></a>
+        <a class="glass cert" href="https://coursera.org/verify/BBVAVFO24Q44" target="_blank" rel="noopener"><time>Sep 21, 2026</time><h4>Becoming a Linux Server Admin</h4><p>Packt, on Coursera. Verify certificate</p></a>
+        <a class="glass cert" href="https://coursera.org/verify/CN86WS4QXNST" target="_blank" rel="noopener"><time>Sep 22, 2026</time><h4>Python Tkinter: Design, Build and Integrate GUIs</h4><p>EDUCBA, on Coursera. Verify certificate</p></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="glass pad">
+          <p>Have a project, internship or business idea? Send me a message and I will reply as soon as I can.</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:05240163.jnec@rub.edu.bt">05240163.jnec@rub.edu.bt</a></li>
+            <li>Phone: +975 17643669</li>
+            <li>Location: Samdrup Jongkhar, Bhutan</li>
+            <li>GitHub: <a href="https://github.com/05240163jnec-pixel" target="_blank" rel="noopener">05240163jnec-pixel</a></li>
+          </ul>
+        </div>
+        <form id="form" class="glass pad" novalidate>
+          <label>Name<input type="text" id="name" required></label>
+          <label>Email<input type="email" id="email" required></label>
+          <label>Message<textarea id="message" rows="5" required></textarea></label>
+          <p class="error" id="error" role="alert"></p>
+          <button type="submit" class="btn primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year"></span> Wangchen Norbu. Built with HTML, CSS and JavaScript.</p></footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

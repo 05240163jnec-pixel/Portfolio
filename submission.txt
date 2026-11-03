@@ -1,0 +1,4 @@
+Student Name: Wangchen Norbu
+Student ID: 05240163
+GitHub Repository Link: https://github.com/05240163jnec-pixel/student_portfolio
+Deployed Website Link: https://05240163jnec-pixel.github.io/student_portfolio/
